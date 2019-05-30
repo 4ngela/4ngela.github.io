@@ -18,8 +18,32 @@
       <div class="form-group col-12 col-md-4">
         <label for="input_name">姓名</label>
         <input type="text" id="input_name" class="form-control" placeholder="王大明">
+        <div class="invalid-feedback">
+          請確認資料是否正確
+       </div>
       </div>
     </div>
+    <!-- email -->
+    <div class="form-row">
+      <div class="form-group col-12 col-md-4">
+        <label for="input_name">email</label>
+        <input type="text" id="input_email" class="form-control" placeholder="wang@gmail.com">
+        <div class="invalid-feedback">
+          請確認資料是否正確
+       </div>
+      </div>
+    </div>
+    <!-- phone -->
+    <div class="form-row">
+      <div class="form-group col-12 col-md-4">
+        <label for="input_name">手機</label>
+        <input type="text" id="input_phone" class="form-control" placeholder="0975005038" mexlength = "10">
+        <div class="invalid-feedback">
+          請確認資料是否正確
+       </div>
+      </div>
+    </div>
+    <!-- birthday year -->
     <div class="form-row">
       <div class="form-group col-12 col-md-6">
         <label>生日</label>
@@ -37,7 +61,11 @@
           <option value="1989">1989</option>
           <option value="1990">1990</option>
         </select>
+        <div class="invalid-feedback">
+          此欄位為必填
+       </div>
       </div>
+    <!-- birthday month -->
       <div class="form-group col-12 col-md-3">
         <label class="d-none d-md-block">&nbsp;</label>
         <select id="sel_bdm" class="form-control">
@@ -55,6 +83,9 @@
           <option value="11">11</option>
           <option value="12">12</option>
         </select>
+        <div class="invalid-feedback">
+          此欄位為必填
+       </div>
       </div>
       <div class="form-group col-12 col-md-3">
         <label class="d-none d-md-block">&nbsp;</label>
@@ -92,7 +123,9 @@
           <option value="30">30</option>
           <option value="31">31</option>
         </select>
-      </div>
+        <div class="invalid-feedback">
+          此欄位為必填
+       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-12">
@@ -111,21 +144,25 @@
         </div>
       </div>
     </div>
+
     <div class="form-row">
       <div class="form-group col-12">
         <label for="input_name" class="d-block">參加項目</label>
+
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="check_games" id="check_games_0" value="0">
           <label class="form-check-label" for="check_games_0">
             卡卡頌
           </label>
         </div>
+
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="check_games" id="check_games_1" value="1">
           <label class="form-check-label" for="check_games_1">
             三國殺
           </label>
         </div>
+
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="check_games" id="check_games_2" value="2">
           <label class="form-check-label" for="check_games_2">
@@ -133,14 +170,18 @@
           </label>
         </div>
       </div>
+      <div class ="invalid-feedback" id="check_games_invalid">
+        請確認是否有勾選
+      </div>
     </div>
+  
     <div class="form-row">
       <div class="form-group col-12 col-md-4">
         <label>備註</label>
         <textarea class="form-control" id="text_note" rows="3" placeholder="我想說"></textarea>
       </div>
     </div>
-    <button class="btn btn-success">送出</button>
+    <button class="btn btn-success" id ="send">送出</button>
   </form>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -153,6 +194,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
