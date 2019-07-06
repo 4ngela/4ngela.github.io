@@ -40,6 +40,5 @@ exports.sendMail = functions.database.ref('/register/{pushId}')
                 //return res.redirect(200, 'OK');
             } 
         });
-        //push to slack
-        request.post('https://hooks.slack.com/services/abc/abc', { json: { text: `:entranced:有人報名了!!快到firebase查看` } })
+      
     });
